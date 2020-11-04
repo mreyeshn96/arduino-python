@@ -2,9 +2,7 @@ import serial
 import time
 import os
 import sys
-arduino = serial.Serial("/dev/ttyACM0", 9600)
-#c = 0
+import globalserial as gc
+
 print("PIN 13 = LOW")
-#time.sleep(1)
-arduino.write(str.encode('8'))
-arduino.close()
+gc.arduino.write(str.encode('6'))

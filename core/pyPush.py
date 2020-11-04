@@ -13,7 +13,7 @@ lastValue = -1
 while True:
     try:
         pushState = arduino.readline().decode(encoding="utf-8")
-        print("Boton pulsado: " + pushState.rstrip('\n'))
+        #print("Boton pulsado: " + pushState.rstrip('\n'))
 
         if( lastValue != int(pushState.rstrip('\n')) ):
             
